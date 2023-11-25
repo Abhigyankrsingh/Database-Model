@@ -10,7 +10,14 @@ const subTodoSchema = new mongoose.Schema({
     complete: {
         type:Boolean,
         default: false,
+    },
+
+    createdBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        
     }
+
+    
 
 }, "timestamps:true");
 
