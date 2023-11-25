@@ -1,6 +1,15 @@
 import mongoose from "mongoose";
 
-const subTodoSchema = new mongoose.Schema({}, "timestamps:true");
+const subTodoSchema = new mongoose.Schema({
+
+    content: {
+        type: String,
+        required: true,
+    },
+
+    
+
+}, "timestamps:true");
 
 
 
